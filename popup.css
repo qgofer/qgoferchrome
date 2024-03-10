@@ -1,10 +1,16 @@
 .container {
   width: 280px;
-  color: #314d3e;
+  color: #171717;
+  background-color: #E2E2E2;
+  font-family: Lato-Bold; 
 }
 
 .title {
   font-size: 14px;
   font-weight: bold;
   padding: 8px;
+}
+
+.output-section {
+  min-height: 40vh;
 }
