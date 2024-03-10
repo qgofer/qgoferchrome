@@ -3,13 +3,13 @@
     "version": "0.1.0",
     "description": "Explore Qgoffer functionalities on Chrome Browser",
     "permissions": ["storage", "tabs"],
-    "host_permissions": [""],
+    "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
-        "matches": [""],
+        "matches": ["*://*/*"],
         "js": ["contentScript.js"]
       }
     ],
@@ -21,7 +21,7 @@
           "assets/qgofer-logos_white.png",
           "assets/qgofer-logos.jpeg"
         ],
-        "matches": [""]
+        "matches": ["<all_urls>"]
       }
     ],
     "action": {
