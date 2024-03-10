@@ -1,7 +1,6 @@
 .container {
   width: 280px;
   color: #171717;
-  background-color: #E2E2E2;
   font-family: Lato-Bold; 
 }
 
@@ -12,5 +11,5 @@
 }
 
 .output-section {
-  min-height: 40vh;
+  min-height: 60vh;
 }
