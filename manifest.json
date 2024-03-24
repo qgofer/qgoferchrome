@@ -2,7 +2,7 @@
     "name": "QGOFER Chrome",
     "version": "0.1.0",
     "description": "Explore Qgoffer functionalities on Chrome Browser",
-    "permissions": ["storage", "tabs"],
+    "permissions": ["storage", "tabs", "activeTab", "scripting", "webNavigation"],
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
@@ -13,13 +13,14 @@
         "js": ["contentScript.js"]
       }
     ],
-    "web_accessible_resources": [
+	"web_accessible_resources": [
       {
         "resources": [
           "assets/qgofer-logos_black.png",
           "assets/qgofer-logos_transparent.png",
           "assets/qgofer-logos_white.png",
-          "assets/qgofer-logos.jpeg"
+          "assets/qgofer-logos.jpeg",
+		  "assets/ext-icon.png"
         ],
         "matches": ["<all_urls>"]
       }
