@@ -70,8 +70,9 @@ image.style.top = "30%";
 image.style.right = "1%";
 image.style.transform = "translateY(-50%)";
 image.style.cursor = "pointer";
-image.style.width = "80px";
-image.style.height = "80px";
+image.style.width = "30px";
+image.style.height = "30px";
+image.style.zIndex = "999999999";
 image.setAttribute("id", "myImage");
 
 // Append the image element to the document body
